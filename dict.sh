@@ -7,9 +7,10 @@ aliases() { egrep -m1 "^$1\s" dict.txt | awk '{$1=""; print $0}'; }
 
 repo=$1
 out=$2
+pattern=en_US.aff
 
 mkdir -p $out
-for aff in `find $repo -name \*.aff`; do
+for aff in `find $repo -name $pattern`; do
     cp $aff $out/
     cp ${aff%.*}.dic $out/
 
