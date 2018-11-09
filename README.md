@@ -15,7 +15,7 @@ The easiest way to run it under Windows is to download MSYS2, run
 `msys2.exe` &:
 
 ~~~
-$ pacman -S git patch zip make
+$ pacman -S git patch zip make tar
 $ git clone ...
 $ cd hunspell-windows
 $ make
